@@ -1,0 +1,21 @@
+.intro {
+    background-image: url(/public/images/footbal2.jpg);
+    height: 100vh;
+  }
+
+  .fan {
+    font-size: 100px;
+    color: black;
+    display: flex;
+    justify-content: center;
+  }
+  .fury {
+    color: gold;
+  }
+  .login {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+  }
