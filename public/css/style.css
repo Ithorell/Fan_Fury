@@ -23,3 +23,8 @@
     border: solid black 3px;
     
   }
+
+  .logo:hover {
+    height: 100px;
+    width: 100px;
+  }
