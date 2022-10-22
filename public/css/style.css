@@ -56,8 +56,8 @@
   }
 
   .logo:hover {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .pass2 {
     display: none;
@@ -65,3 +65,27 @@
   .pass3{
     display: none;
   }
+  .logo{
+    height: 150px;
+    width: 150px;
+    border: solid black 2px;
+    background-color: gray;
+    }
+    .teamSelect{
+      background-image: url(/public/images/nfl-locker-room.webp);
+      background-size: 2600px;
+    height: 100vh;
+    }
+    .teamHeader{
+      display: flex;
+      font-size: 50px;
+      color:black;
+      font-weight: bold;
+    }
+    .teamLogos{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-evenly;
+      margin: auto;
+    }
