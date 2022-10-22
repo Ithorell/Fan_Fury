@@ -5,26 +5,63 @@
 
   .fan {
     font-size: 100px;
-    color: black;
+    color: red;
     display: flex;
     justify-content: center;
+    font-weight: bolder;
+    padding-top:100px;
+  }
+  .nf {
+    color: white;
+    font-weight: bolder;
   }
   .fury {
-    color: gold;
+    color: blue;
+    font-weight: bolder;
   }
   .login {
     background-color: gold;
     display: flex;
     justify-content: center;
-    margin: auto;
+    margin: auto; 
     width: 300px;
     margin-top:250px;
     padding:30px;
     border: solid black 3px;
     
   }
+  .accountregister{
+    background-image: url(/public/images/footballfield.jpg);
+    background-size: 2500px;
+    height: 100vh;
+  }
+  .register {
+    display: flex;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    margin: auto; 
+    width: 300px;
+    padding:30px;
+    border: solid black 3px;
+    justify-content: space-around;
+    
+  }
+  .accounthead {
+    color:gold;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    margin-bottom: 600px;
+  }
 
   .logo:hover {
     height: 100px;
     width: 100px;
+  }
+  .pass2 {
+    display: none;
+  }
+  .pass3{
+    display: none;
   }
