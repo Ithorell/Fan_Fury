@@ -95,3 +95,22 @@
      
       
     }
+   
+   .profileHead{
+    border: solid black 5px;
+    display: flex;
+   }
+ .profileHead h1 {
+  display: flex;
+  justify-content: center;
+ }
+ .profileHead img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    float: right;
+ }
+ .profileHead p {
+  display: flex;
+  float: right;
+ }
