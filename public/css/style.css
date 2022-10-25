@@ -99,6 +99,7 @@
    .profileHead{
     border: solid black 5px;
     display: flex;
+    
    }
  .profileHead h1 {
   display: flex;
@@ -117,4 +118,21 @@
 .username {
   font-size: 30px;
   font-weight: bolder;
+  
+}
+.profile {
+  background-image: url(/public/images/cardboard-fans.jpg);
+  background-size: 2500px;
+  height: 100vh;
+}
+.newsFeed {
+  border: solid black 5px;
+  height: 50vh ;
+  font-weight: bold;
+}
+.social {
+  border: solid black 5px;
+  height: 50vh;
+  font-size: 30px;
+  font-weight: bold;
 }
