@@ -1,4 +1,4 @@
-const scoresApi = 'https://api.sportsdata.io/v3/nfl/';
+const rootApi = 'https://api.sportsdata.io/v3/nfl/';
 const apiKey = '?key=a5e2eba777e4407396d813ee1fa5ef6d';
 const news = 'scores/json/News';
 // news api

@@ -103,14 +103,18 @@
  .profileHead h1 {
   display: flex;
   justify-content: center;
+  position:absolute;
+  left:0;
+  right: 0;
  }
- .profileHead img {
+ .pic{
     display: flex;
     width: 200px;
     height: 200px;
-    float: right;
+    float: right
+
  }
- .profileHead p {
-  display: flex;
-  float: right;
- }
+.username {
+  font-size: 30px;
+  font-weight: bolder;
+}
