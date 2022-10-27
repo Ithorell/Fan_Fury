@@ -4,6 +4,7 @@ const news = 'scores/json/News';
 const season = 'scores/json/TeamSeasonStats/';
 const seasonYear = '2022';
 let newTeam = '';
+const newsFeed = document.getElementById('newsFeed');
 
 // gathering the team ID based on the user input
 document.querySelectorAll('.logo').forEach((item) => {
@@ -37,11 +38,11 @@ const getSeason = function () {
       const teamData = data.filter((item) => item.Team === newTeam);
       console.log(teamData);
       const passingYards = teamData[0].PassingYards;
-      // console.log(passingYards);
+      console.log(passingYards);
       const rushingYards = teamData[0].RushingYards;
-      // console.log(rushingYards);
+      console.log(rushingYards);
       const touchdowns = teamData[0].Touchdowns;
-      // console.log(touchdowns);
+      console.log(touchdowns);
       const fieldgoalsmade = teamData[0].FieldGoalsMade;
       console.log(fieldgoalsmade);
     });
