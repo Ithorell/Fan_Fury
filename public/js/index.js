@@ -4,6 +4,7 @@ const news = 'scores/json/News';
 const season = 'scores/json/TeamSeasonStats/';
 const seasonYear = '2022';
 const standings = 'scores/json/Standings/';
+const schedule = 'scores/json/Schedules/';
 let newTeam = '';
 const newsFeed = document.getElementById('newsFeed');
 
@@ -14,6 +15,7 @@ document.querySelectorAll('.logo').forEach((item) => {
     newTeam = team;
     getSeason();
     getStangings();
+    getSchedule();
   });
 });
 
@@ -25,7 +27,7 @@ const getSeason = function () {
 
     .then((data) => {
       const teamData = data.filter((item) => item.Team === newTeam);
-      console.log(teamData);
+      // console.log(teamData);
       const passingYards = teamData[0].PassingYards;
       // console.log(passingYards);
       const rushingYards = teamData[0].RushingYards;
@@ -95,3 +97,22 @@ const getStangings = function () {
         .append('Conference Rank: ' + conferenceRank);
     });
 };
+
+//! schedule API
+// * this is a possible API to be used later. we need to figure out how to get games that are later than the current date
+// const getSchedule = function () {
+//   const nextGame = rootApi + schedule + seasonYear + apiKey;
+//   fetch(nextGame)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       const teamData = data.filter(
+//         (item) => item.HomeTeam === newTeam || item.AwayTeam === newTeam
+//       );
+//       console.log(teamData);
+// *get game dates that are later than today
+
+//       const day = teamData.Day;
+
+//       console.log(day);
+//     });
+// };
