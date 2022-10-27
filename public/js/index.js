@@ -4,28 +4,29 @@ const news = 'scores/json/News';
 const season = 'scores/json/TeamSeasonStats/';
 const seasonYear = '2022';
 let newTeam = '';
+
+// gathering the team ID based on the user input
 document.querySelectorAll('.logo').forEach((item) => {
   item.addEventListener('click', (event) => {
     const team = item.id;
-    console.log('team ' + team);
     newTeam = team;
-    console.log('new Team ' + newTeam);
     getSeason();
   });
 });
 
-// news api0
-const getData = function () {
-  const scores = rootApi + news + apiKey;
-  fetch(scores)
-    .then((response) => response.json())
-    .then((data) => console.log(data));
-};
-getData();
-// stick with news feed
-// team stats by season (passing yards,rushing yards, touchdowns, fieldgoalsmade)
-// team standings
+// ! this API is not currently being used
+// const getData = function () {
+//   const scores = rootApi + news + apiKey;
+//   fetch(scores)
+//     .then((response) => response.json())
+//     .then((data) => console.log(data));
+// };
+// getData();
 
+// todo team stats by season (passing yards,rushing yards, touchdowns, fieldgoalsmade)
+// todo team standings
+
+// season stats API
 const getSeason = function () {
   const newSeason = rootApi + season + seasonYear + apiKey;
   fetch(newSeason)
@@ -35,7 +36,13 @@ const getSeason = function () {
       // need filter method
       const teamData = data.filter((item) => item.Team === newTeam);
       console.log(teamData);
+      const passingYards = teamData[0].PassingYards;
+      // console.log(passingYards);
+      const rushingYards = teamData[0].RushingYards;
+      // console.log(rushingYards);
+      const touchdowns = teamData[0].Touchdowns;
+      // console.log(touchdowns);
+      const fieldgoalsmade = teamData[0].FieldGoalsMade;
+      console.log(fieldgoalsmade);
     });
 };
-
-// getSeason();
