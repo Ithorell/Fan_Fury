@@ -1,26 +1,29 @@
 {
-  "name": "fan_fury_chat_app",
+  "name": "fan_fury",
   "version": "1.0.0",
-  "description": "Fan Fury Chat App built with node, express, ejs, socket.io",
-  "main": "app.js",
+  "description": "Fan fury website with chat app included.",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+    "start": "node server.js",
+    "seed": "node seeds/seed.js",
+    "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dhabi966/Chat-app"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
 
-  },
-  "homepage": "",
+  
+  "homepage": ".handlebars",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "nodemon": "^2.0.20",
-    "socket.io": "^2.5.0"
+    "socket.io": "^2.5.0",
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.3",
+    "lodash":"^4.17.21"
   }
 }
