@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <title>Fan Fury Chat App</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Fan Fury Chat</h1>
+    </header>
+
+    <!--<section>-->
+      <!--Need add function that grabs the username from the login/register page, 
+        otherwise, as a backup, we could use the following code and the user can 
+      manually enter their own username-->
+      
+      <!--<div id="enter_username">
+        <input id="username" type="text" />
+        <button id="send_username" type="button">Enter username</button>
+      </div>
+    </section>> -->
+
+    <section id="chatroom">
+      <section id="feedback"></section>
+    </section>
+
+    <section id="input_zone">
+      <input id="message" class="vertical-align" type="text" />
+      <button id="send_message" class="vertical-align" type="button">
+        Send
+      </button>
+    </section>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="chat.js"></script>
+  </body>
+</html>
