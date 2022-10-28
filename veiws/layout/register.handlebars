@@ -19,11 +19,16 @@
         <input class='rounded mb-2' type='text' placeholder='Email:' />
         <input class='rounded mb-2' type='text' placeholder='Username:' />
         <input class='rounded mb-2' type='text' placeholder='Password:' />
-        <input
-          class='rounded mb-2'
-          type='text'
-          placeholder='Tell us about yourself:'
-        />
+        <div
+          class='wrap-input1 validate-input'
+          data-validate='Tell us about yourself is required'
+        >
+          <textarea
+            class='input rounded mb-2 about'
+            name='message'
+            placeholder='Tell us about yourself:'
+          ></textarea>
+        </div>
         <input
           class='rounded mb-2 pass2'
           type='text'
@@ -40,3 +45,9 @@
   </body>
   <script src='/public/js/index.js'></script>
 </html>
+
+<textarea
+  class='input1'
+  name='message'
+  placeholder='Tell us about yourself'
+></textarea>
