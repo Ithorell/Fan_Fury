@@ -1,4 +1,4 @@
-const {Model, DataTypes} = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
 
@@ -21,7 +21,9 @@ User.init(
             allowNull: false,
             unique: true,
             validate: {
-                    len: [25],}},
+                len: [25],
+            }
+        },
         password: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -41,7 +43,12 @@ User.init(
                 return updatedUserData;
             }
         },
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'user'
+    }
+);
 
-        }
-
-        
+module.exports = User;
