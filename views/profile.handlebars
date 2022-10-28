@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/public/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
   </head>
   <body>
     <div class="profile">
@@ -76,16 +77,29 @@
           
           <p>About Me:</p>
           <p>favorite Team(s):</p>
-          <p>Friends:</p>
-          
+          <p id="friends">Friends:</p>
+          <input id="searchFriends" class="rounded input"type="text" placeholder="Search for new friends"> <button class="btn btn-dark">Search</button>
           <p>Messages:</p>
-          <div id="">
-          <input class=" rounded input" type="text" placeholder="Type message:"> <button class="btn btn-dark">Send</button>
-        </div>
+          <!-- new messege code -->
+          <section id="chatroom">
+            <section id="feedback"></section>
+          </section>
+      
+          <section id="input_zone">
+            <input id="message" class="rounded input" type="text" placeholder="Type Message:" />
+            <button id="send_message" class="btn btn-dark" type="button">
+              Send
+            </button>
+          </section>
+
+          <!-- end messege code -->
+         
         </div>
       </div>
       
     </div>
   </body>
   <script src="/public/js/index.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="chat.js"></script>
 </html>
