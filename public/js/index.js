@@ -1,5 +1,5 @@
 const rootApi = 'https://api.sportsdata.io/v3/nfl/';
-const apiKey = '?key=a5e2eba777e4407396d813ee1fa5ef6d';
+const apiKey = '?key=a5e2eba777e4407396d813ee1fa5ef6d'; //process.env.API_KEY
 const news = 'scores/json/News';
 const season = 'scores/json/TeamSeasonStats/';
 const seasonYear = '2022';

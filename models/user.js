@@ -11,7 +11,7 @@ class User extends Model {
 User.init(
     {
         id: {
-            type: dataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
@@ -30,7 +30,16 @@ User.init(
             validate: {
                 len: [8],
             },
-        }
+        },    
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            unique: true,
+            validate: {
+              isEmail: true,
+            },
+          },
+
     },
     {
         hooks: {
