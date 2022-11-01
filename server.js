@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3008;
 const hbs = exphbs.create({});
 
 const sess = {
-    secret: 'Authenication secret',
+    secret: 'Authentication secret',
     cookie: {},
     resave: false,
     saveUninitialized: true,
@@ -26,8 +26,9 @@ const sess = {
 app.engine('handlebars', hbs.engine)
 app.set('view engine', 'handlebars');
 
-app.use(express.static(path.join(__dirname, 'public/css')));
-app.use(require(routes));
+app.use(session(sess));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(routes);
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`);
